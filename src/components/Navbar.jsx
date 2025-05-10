@@ -3,6 +3,7 @@ import { IoIosArrowForward } from "react-icons/io";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { TfiClose } from "react-icons/tfi";
 import { Link } from "react-router-dom";
+import Products from "../pages/Products";
 
 const Navbar = () => {
   const [isLogin, setIsLogin] = useState(false);
@@ -39,9 +40,14 @@ const Navbar = () => {
           </svg>
 
           <ul className="lg:flex hidden gap-7 font-semibold cursor-pointer">
+            <Link to="/products">
             <li className="flex items-center gap-1 hover:text-[#00a2ff]">
-              Product <IoIosArrowForward className="text-xs mt-1" />
-            </li>
+                Product <IoIosArrowForward className="text-xs mt-1" />
+              </li>
+            </Link>
+              
+            
+
             <li className="hover:text-[#00a2ff]">Pricing</li>
             <li className="flex items-center gap-1 hover:text-[#00a2ff]">
               Resources <IoIosArrowForward className="text-xs mt-1" />
