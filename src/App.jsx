@@ -5,6 +5,7 @@ import Homepage from "./pages/Homepage";
 import Registration from "./pages/Registration";
 import User from "./pages/User";
 import Products from "./pages/Products";
+import FacebookPost from "./pages/FacebookPost";
 
 function App() {
   return (
@@ -13,8 +14,8 @@ function App() {
       <Route path="/login" element={<Login />} />
       <Route path="/registration" element={<Registration />} />
       <Route path="/User" element={<User />} />
-      <Route path="products" element={<Products />}/>
-      
+      <Route path="products" element={<Products />} />
+      <Route path="facebook" element={<FacebookPost />} />
     </Routes>
   );
 }
