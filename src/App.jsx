@@ -5,7 +5,8 @@ import Homepage from "./pages/Homepage";
 import Registration from "./pages/Registration";
 import User from "./pages/User";
 import Products from "./pages/Products";
-import FacebookPost from "./pages/FacebookPost";
+import UserCard from "./pages/UserCard";
+import PostPage from "./pages/postPage";
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
       <Route path="/registration" element={<Registration />} />
       <Route path="/User" element={<User />} />
       <Route path="products" element={<Products />} />
-      <Route path="facebook" element={<FacebookPost />} />
+      <Route path="facebook" element={<PostPage />} />
+      <Route path="UserCard" element={<UserCard />} />
     </Routes>
   );
 }

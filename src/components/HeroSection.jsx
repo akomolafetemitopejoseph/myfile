@@ -5,7 +5,10 @@ const HeroSection = () => {
   const subcribe = () => {
     setIsSubcribed(true);
   };
+
+  
   return (
+    
     <section className="h-screen flex flex-col justify-center items-center px-4">
       <div className="text-center space-y-7">
         <p className="lg:text-[#717171] text-red-400 text-capitalize text-[14px]">

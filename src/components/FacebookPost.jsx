@@ -6,7 +6,7 @@ const FacebookPost = () => {
 
   const handleLikes = () => {
     if (likes < 1) {
-      setLikes(likes +1);
+      setLikes(likes + 1);
     }
   };
 
