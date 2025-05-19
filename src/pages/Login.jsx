@@ -2,7 +2,7 @@ import axios from "axios";
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
-const Login = () => {
+const Login = ({setFirstName}) => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [isChecked, setIsChecked] = useState(false);
@@ -30,6 +30,7 @@ const Login = () => {
       navigate("/");
 
       console.log(response);
+      setFirstName(response.data.firstName)
     } catch (error) {
       setError(true);
       console.log("erroe", error);

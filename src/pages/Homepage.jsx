@@ -18,7 +18,6 @@ const HeroSection = React.lazy(
 const Homepage = () => {
   return (
     <div>
-      <Navbar />
       <div>
         <Suspense fallback={<Loading />}>
           <HeroSection />

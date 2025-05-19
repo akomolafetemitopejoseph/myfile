@@ -5,7 +5,7 @@ import { TfiClose } from "react-icons/tfi";
 import { Link } from "react-router-dom";
 import Products from "../pages/Products";
 
-const Navbar = () => {
+const Navbar = ({firstName}) => {
   const [isLogin, setIsLogin] = useState(false);
   const [isMobileNav, setIsMobileNav] = useState(false);
 
@@ -65,7 +65,7 @@ const Navbar = () => {
         </div>
 
         {isLogin ? (
-          <p className="font-semibold text-2xl">Hi {name}!</p>
+          <p className="font-semibold text-2xl">user@gmail.com | Hi {firstName}!</p>
         ) : (
           <div className="lg:flex hidden gap-5 items-center font-bold">
             <Link to="/login">
